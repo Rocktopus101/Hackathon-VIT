@@ -6,99 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-    #item{
-    /* Rectangle 29 */
-
-
-
-background: #ffffff;
-
-
-/* ITEM */
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 42px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #000000;
-
-
-    }
-#but1{
-
-    background-color:rgb(64, 224, 245);
-    width: 50px;
-        /* ADD */
-
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #000000;
-
-}
-#but2
-{
-
-/* CANCEL */
-
-background-color: red;
-width:80px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #000000;
-
-
-    }
-    div{
-        background-color: rgb(155, 173, 51);
-    
-    }
-    
-    
+        #item{
+            border:1px solid black;
+            padding: 10px;
+            width:
+        }
+        .flex-box-row-1{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .flex-box-row-1 button{
+            margin:5px;
+        }
+        .btn btn-danger{
+            
+        }
     </style>
     <title>Document</title>
 </head>
 <body>
     <div>
     <p>Recommended item:(Will be displayed after more data is recorded.)</p>
-    <p id="item">ITEM</p>
-    
-        <p id="but1">ADD</p>
-        <p id="but2">CANCEL</p>
-        <select id="list1" Name="Inventory" Size="4">  
-            <option> Milk </option>  
-            <option> Bread </option>  
-            <option> Eggs </option>  
-            <option> Curd </option>  
-          </select>  
-          <select Name="Quantity" Size="4">  
+    <p><h1 id="item">ITEM</h1></p>
+        <div class="flex-box-row-1">
+           <button class="btn btn-primary">ADD</button>
+           <button class="btn btn-danger">CANCEL</button>
+        </div>
+        <h3>Items available in store now: </h3>
+        <div>
+            <select id="list1" Name="Inventory" Size="1">  
+                <option>Press here to view</option>
+                <option> Milk </option>  
+                <option> Bread </option>  
+                <option> Eggs </option>  
+                <option> Curd </option>  
+            </select>  
+        
+          <select Name="Quantity" Size="1"> 
+            <option>Quantity</option> 
             <option> 1 </option>  
             <option> 2 </option>  
             <option> 3 </option>  
             <option> 4 </option>  
-          </select>  
-          <p id="but1">ADD ITEM</p>
-        <p id="but2">PAY NOW</p>
+          </select>
+          </div>  
+          <div class="">
+                <button class="btn btn-primary">ADD ITEM</button>
+                <button class="btn btn-danger">PAY NOW</button>
+          </div>
+          
     </div>
     
 </body>
